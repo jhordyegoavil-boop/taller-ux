@@ -37,5 +37,7 @@
 
 ## 5. Enlaces
 
-- Repositorio: https://github.com/TU-USUARIO/TU-REPO
-- Página publicada: https://TU-USUARIO.github.io/TU-REPO/
+- Repositorio: https://jhordyegoavil-boop.github.io/taller-ux/
+- Página publicada: https://jhordyegoavil-boop.github.io/taller-ux/docs/
+
+
