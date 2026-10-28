@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mis notas</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <main class="tarjeta">
+    <h1>Mis notas</h1>
+    <p class="ayuda">Escribe una nota, elige una categoría y pulsa «Agregar nota».</p>
+
+    <form id="formulario" novalidate>
+      <fieldset>
+        <legend>1. Escribe tu nota</legend>
+
+        <label for="texto">Texto de la nota</label>
+        <input id="texto" type="text" maxlength="120" autocomplete="off"
+               placeholder="Ej.: Estudiar para el examen" aria-describedby="error-texto" required>
+        <p id="error-texto" class="error-campo" role="alert"></p>
+
+        <label for="categoria">Categoría</label>
+        <select id="categoria" required>
+          <option value="Personal">Personal</option>
+          <option value="Estudio">Estudio</option>
+          <option value="Trabajo">Trabajo</option>
+        </select>
+      </fieldset>
+
+      <div class="acciones">
+        <button type="submit" id="agregar" class="boton-principal" disabled>Agregar nota</button>
+      </div>
+    </form>
+
+    <p id="mensaje" class="mensaje" role="status"></p>
+
+    <section aria-labelledby="titulo-lista">
+      <h2 id="titulo-lista">2. Tus notas <span id="contador">(0)</span></h2>
+      <ul id="lista" class="lista"></ul>
+      <p id="vacio" class="ayuda">Aún no tienes notas. ¡Agrega la primera!</p>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
